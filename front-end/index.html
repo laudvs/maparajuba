@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maparajuba</title>
+  <link rel="stylesheet" href="../front-end/style.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="hero">
+    <div class="container">
+      <h1>Coletivo Maparajuba</h1>
+      <p>Direitos Humanos na Amazônia</p>
+      <a href="#contato" class="btn">Entre em Contato</a>
+    </div>
+  </header>
+
+  <!-- Sobre -->
+  <section id="sobre" class="section">
+    <div class="container">
+      <h2>Sobre Nós</h2>
+      <p>
+        Fundado em 2020, no município de Santarém/Pa, 
+        o Coletivo de Direitos Humanos na Amazônia - MAPARAJUBA 
+        constitui-se juridicamente como uma associação sem fins 
+        lucrativos, reconhecida como organização coletiva e não 
+        governamental.
+      </p>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="section bg-light">
+    <div class="container">
+      <h2>Nossa Equipe</h2>
+      <ul class="servicos-lista">
+        <li>Lincon Aguiar</li>
+        <li>Néri Junio</li>
+        <li>Orilane de Castro</li>
+        <li>Milady France</li>
+        <li>Cláudio Barros</li>
+        <li>Rayanna Dolores</li>
+        <li>Thiago Rocha</li>
+      </ul>
+    </div>
+  </section>
+
+    <!-- Ações e Eventos -->
+  <section id="eventos" class="section bg-light">
+    <div class="container">
+      <h2>Ações, Projetos e Eventos</h2>
+      <ul class="servicos-lista">
+        <li>Escola Jurupari</li>
+        <li>Cartilha COP30</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Formulário de Contato -->
+  <section id="contato" class="section">
+    <div class="container">
+      <h2>Contato</h2>
+      <form action="../back-end/contato.php" method="POST">
+        <input type="text" name="nome" placeholder="Seu Nome" required>
+        <input type="email" name="email" placeholder="Seu E-mail" required>
+        <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Coletivo Maparajubaos reservados</p>
+  </footer>
+
+  <script src="../front-end/script.js"></script>
+</body>
+</html>
