@@ -3,29 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maparajuba</title>
-  <link rel="stylesheet" href="../front-end/style.css">
+  <title>Coletivo Maparajuba - Advocacia</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Cabeçalho -->
-  <header class="hero">
+  <!-- Header / Navbar -->
+  <header class="navbar">
     <div class="container">
-      <h1>Coletivo Maparajuba</h1>
-      <p>Direitos Humanos na Amazônia</p>
-      <a href="#contato" class="btn">Entre em Contato</a>
+      <h1 class="logo">Coletivo Maparajuba</h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Defendendo seus direitos com responsabilidade e ética</h2>
+      <p>Advocacia comprometida com a justiça e a transparência.</p>
+      <a href="#contato" class="btn">Fale Conosco</a>
+    </div>
+  </section>
 
   <!-- Sobre -->
   <section id="sobre" class="section">
     <div class="container">
       <h2>Sobre Nós</h2>
       <p>
-        Fundado em 2020, no município de Santarém/Pa, 
-        o Coletivo de Direitos Humanos na Amazônia - MAPARAJUBA 
-        constitui-se juridicamente como uma associação sem fins 
-        lucrativos, reconhecida como organização coletiva e não 
-        governamental.
+        O <strong>Coletivo Maparajuba</strong> é um escritório de advocacia que atua em diversas áreas do direito,
+        prezando pela ética, responsabilidade e pelo atendimento humanizado.
       </p>
     </div>
   </section>
@@ -33,48 +44,45 @@
   <!-- Serviços -->
   <section id="servicos" class="section bg-light">
     <div class="container">
-      <h2>Nossa Equipe</h2>
-      <ul class="servicos-lista">
-        <li>Lincon Aguiar</li>
-        <li>Néri Junio</li>
-        <li>Orilane de Castro</li>
-        <li>Milady France</li>
-        <li>Cláudio Barros</li>
-        <li>Rayanna Dolores</li>
-        <li>Thiago Rocha</li>
-      </ul>
+      <h2>Nossos Serviços</h2>
+      <div class="servicos-cards">
+        <div class="service-card">
+          <img src="images/consultoria.svg" alt="Consultoria Jurídica">
+          <h3>Consultoria Jurídica</h3>
+          <p>Atendimento especializado em diversas áreas do direito.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/direito-civil.svg" alt="Direito Civil">
+          <h3>Direito Civil</h3>
+          <p>Atuação em contratos, obrigações, responsabilidade civil e mais.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/direito-trabalho.svg" alt="Direito Trabalhista">
+          <h3>Direito Trabalhista</h3>
+          <p>Defesa de direitos e orientação em processos trabalhistas.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-    <!-- Ações e Eventos -->
-  <section id="eventos" class="section bg-light">
-    <div class="container">
-      <h2>Ações, Projetos e Eventos</h2>
-      <ul class="servicos-lista">
-        <li>Escola Jurupari</li>
-        <li>Cartilha COP30</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Formulário de Contato -->
+  <!-- Contato -->
   <section id="contato" class="section">
     <div class="container">
-      <h2>Contato</h2>
-      <form action="../back-end/contato.php" method="POST">
-        <input type="text" name="nome" placeholder="Seu Nome" required>
-        <input type="email" name="email" placeholder="Seu E-mail" required>
-        <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+      <h2>Entre em Contato</h2>
+      <form action="../back-end/contato.php" method="POST" class="form-contato">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
         <button type="submit" class="btn">Enviar</button>
       </form>
     </div>
   </section>
 
-  <!-- Rodapé -->
-  <footer>
-    <p>&copy; 2025 Coletivo Maparajubaos reservados</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Coletivo Maparajuba - Todos os direitos reservados.</p>
+    </div>
   </footer>
-
-  <script src="../front-end/script.js"></script>
 </body>
 </html>
