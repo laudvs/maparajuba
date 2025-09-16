@@ -3,51 +3,87 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  background-color: #f9f9f9;
   color: #333;
+  line-height: 1.6;
 }
 
+/* Container padrão */
 .container {
   width: 90%;
   max-width: 1100px;
   margin: auto;
-  text-align: center;
-  padding: 40px 20px;
+}
+
+/* Navbar */
+.navbar {
+  background: #0d253f; /* azul escuro */
+  color: #fff;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #1abc9c; /* verde esmeralda */
 }
 
 /* Hero */
 .hero {
-  background: linear-gradient(to right, #1a1a1a, #444);
+  background: linear-gradient(to right, #0d253f, #1abc9c);
   color: #fff;
+  text-align: center;
   padding: 100px 20px;
 }
 
-.hero h1 {
+.hero h2 {
   font-size: 2.5rem;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .hero p {
   font-size: 1.2rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .btn {
   display: inline-block;
-  padding: 10px 20px;
-  background: #8b0000;
+  padding: 12px 25px;
+  background: #1abc9c;
   color: #fff;
-  text-decoration: none;
+  border: none;
   border-radius: 5px;
-  transition: background 0.3s;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  background: #a52a2a;
+  background: #16a085;
 }
 
 /* Seções */
@@ -55,48 +91,89 @@ body {
   padding: 60px 20px;
 }
 
-.bg-light {
-  background: #f4f4f4;
-}
-
-h2 {
-  margin-bottom: 20px;
+.section h2 {
+  text-align: center;
+  margin-bottom: 40px;
   font-size: 2rem;
+  color: #0d253f;
 }
 
-.servicos-lista {
-  list-style: none;
-  font-size: 1.1rem;
+.bg-light {
+  background: #f0f4f8;
 }
 
-.servicos-lista li {
-  margin: 10px 0;
+/* Serviços - cards */
+.servicos-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
-/* Formulário */
-form {
+.service-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 280px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card img {
+  width: 70px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #0d253f;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Formulário de contato */
+.form-contato {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
 }
 
-input, textarea {
-  padding: 10px;
-  font-size: 1rem;
+.form-contato input,
+.form-contato textarea {
+  padding: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 1rem;
 }
 
-button {
+.form-contato textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.form-contato button {
   cursor: pointer;
+  font-size: 1rem;
 }
 
-/* Rodapé */
-footer {
-  background: #1a1a1a;
+/* Footer */
+.footer {
+  background: #0d253f;
   color: #fff;
-  padding: 20px;
   text-align: center;
+  padding: 20px;
+  margin-top: 40px;
 }
