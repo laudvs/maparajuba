@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS maparajuba_db;
+USE maparajuba_db;
+
+CREATE TABLE IF NOT EXISTS contatos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL,
+    mensagem TEXT NOT NULL,
+    data_envio TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
