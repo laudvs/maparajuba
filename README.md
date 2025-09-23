@@ -5,23 +5,25 @@ O projeto tem como objetivo apresentar informações institucionais, serviços p
 As mensagens enviadas são armazenadas em um banco de dados **MySQL**, utilizando **PHP** como back-end.
 
 ---
+## 📌 Funcionalidades
 
-## 🚀 Funcionalidades
+- Landing Page responsiva (mobile-first) com seções:  
+  - Apresentação (Hero)  
+  - Sobre Nós  
+  - Serviços  
+  - Formulário de Contato  
+- Envio de formulário com campos: **nome, e-mail, mensagem**  
+- Armazenamento das mensagens em **banco MySQL**  
+- Painel administrativo para **visualizar mensagens enviadas**  
+- Documentação com instruções de instalação e uso
 
-- **Landing Page responsiva** com:
-  - Seção de apresentação (*hero*).
-  - Seção "Sobre nós".
-  - Seção de serviços oferecidos.
-  - Formulário de contato.
+### 🔜 Próximos Incrementos
 
-- **Formulário de contato**:
-  - Envia dados de nome, e-mail e mensagem.
-  - Os dados são salvos no banco de dados MySQL.
-
-- **Painel administrativo (admin.php)**:
-  - Lista todas as mensagens enviadas.
-  - Ordena por data de envio.
-  - Permite acompanhar as informações de contato recebidas.
+- Autenticação para acesso ao painel administrativo  
+- Exclusão / edição de mensagens no painel  
+- Envio de e-mail automático de confirmação / notificação  
+- Validações avançadas no front-end e back-end  
+- Proteção contra spam (captcha ou honeypot)
 
 ---
 
